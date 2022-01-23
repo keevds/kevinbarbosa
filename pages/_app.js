@@ -1,7 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import Head from 'next/head'
+// import Head from 'next/head'
 
 import Layout from '../components/Layout'
 
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         outline: 0;
-        font-family: 'Oxanium', cursive;
+        /* font-family: 'Oxanium', cursive; */
         font-size: 24px;
     }
 `
@@ -35,12 +35,12 @@ export default function App({ Component, pageProps }) {
     <>
       <Layout>
 
-        <Head>
+        {/* <Head>
           <title>Kevin Barbosa</title>
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
             <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"></link>
-        </Head>
+        </Head> */}
 
         <GlobalStyle />
         <ThemeProvider theme={theme}>
